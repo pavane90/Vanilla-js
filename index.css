@@ -11,8 +11,9 @@ body {
   background-repeat: no-repeat;
   background-size: auto;
   margin: 0;
+  flex-direction: column;
+  font-family: "Arial Rounded MT Bold","Helvetica Rounded",Arial,sans-serif;
 }
-
 
 h1 {
   animation: all 0.1s ease-in-out;
@@ -20,4 +21,78 @@ h1 {
   color: #ffffff;
   text-shadow: 2px 2px 6px gray;
   user-select: none;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+span,
+input {
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  font-size: 1.75em;
+  padding: .25em .5em .3125em;
+  color: rgba(255, 255, 255, 0.7);
+  border-radius: .25em;
+  background: transparent;
+  transition: all .100s;
+}
+span:focus,
+input:focus {
+  outline: none;
+  color: rgba(255, 255, 255, 0.75);
+  border-color: rgba(255, 255, 255, 0.75);
+}
+span.keyup,
+input.keyup {
+  color: white;
+  border-color: white;
+  text-shadow: 0 0 .125em white;
+  box-shadow: 0 0 .25em white,inset 0 0 .25em white;
+}
+
+canvas {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  text-shadow: 0 0 .125em transparent;
+  transition: all .25s;
+}
+
+input:focus::-webkit-input-placeholder {
+  opacity: .5;
+}
+
+::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  text-shadow: 0 0 .125em transparent;
+  transition: all .25s;
+}
+
+input:focus::-moz-placeholder {
+  opacity: .5;
+}
+
+:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  text-shadow: 0 0 .125em transparent;
+  transition: all .25s;
+}
+
+input:focus:-ms-input-placeholder {
+  opacity: .5;
+}
+
+.form,
+.grettings {
+  display: none;
+}
+
+.showing {
+  display: block;
 }
