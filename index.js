@@ -1,6 +1,10 @@
-function sayHello(name) {
-    console.log('Hello! ' + name);
+
+const calculator = {
+    plus: function(arg1, arg2){
+        return arg1+arg2;
+    }
 }
 
-sayHello("lee");
-console.log("Hi!");
+// console.log(greetLee);
+const plus = calculator.plus(5,5);
+console.log(plus);
