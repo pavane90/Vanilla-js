@@ -1,17 +1,22 @@
 body {
-  background-color: powderblue;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://picsum.photos/1920/1080?random=1');
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin: 0;
 }
 
-.btn {
-  cursor: pointer;
-  user-select: none;
-}
 
 h1 {
-  color: #34495e;
-  transition: color 0.1s ease-in-out;
-}
-
-.clicked {
-  color: #7f8c8d;
+  animation: all 0.1s ease-in-out;
+  font-size: 12vw;
+  color: #ffffff;
+  text-shadow: 2px 2px 6px gray;
 }
