@@ -46,6 +46,7 @@ input {
   border-radius: .25em;
   background: transparent;
   transition: all .100s;
+  margin-bottom: 16px;
 }
 span:focus,
 input:focus {
@@ -107,4 +108,17 @@ input:focus:-ms-input-placeholder {
 
 .showing {
   display: block;
+}
+
+
+ul>li>span {
+  border: none;
+  color: #FFFFFF;
+  padding: 0 8px 0 0;
+}
+
+ul>li>button {
+  background: none;
+  padding-bottom: 8px;
+  border: none;
 }
