@@ -22,6 +22,12 @@ function handleSubmit(event) {
     saveName(currentValue);
 }
 
+function handleClick(event) {
+    form.classList.add(SHOWING_CN);
+    greeting.classList.remove(SHOWING_CN);
+    localStorage.removeItem(USER_LS);
+}
+
 function askForName() {
     form.classList.add(SHOWING_CN);
     form.addEventListener("submit", handleSubmit);
@@ -40,6 +46,8 @@ function loadName() {
 
 function init() {
     loadName();
+    
+    greeting.addEventListener("click", handleClick);
 }
 
 init();
