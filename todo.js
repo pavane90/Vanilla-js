@@ -32,6 +32,7 @@ function paintToDo(text) {
     li.appendChild(delBtn);
     li.appendChild(span);
     li.id = newId;
+    li.className = "animated slideInUp";
     toDoList.appendChild(li);
     const toDoObj = {
         text: text,
